@@ -2,7 +2,8 @@ Feature: Check returned product Information GET request
 
   Background:
     * url 'http://localhost:3030'
-    * header Accept = 'application/json'
+    * header Content-Type = 'application/json'
+    * header Content-Control = 'no-cache'
 
   Scenario: 1. GET Request to list the information about product ID - No Parameterisation
 
