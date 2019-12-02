@@ -2984,3 +2984,1654 @@
 1 < X-Powered-By: Express
 {"id":9999751,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-11-29T15:46:25.731Z","createdAt":"2019-11-29T15:46:25.731Z"}
 
+08:41:31.883 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:41:32.141 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+08:41:32.219 [main] DEBUG com.intuit.karate - response time in milliseconds: 75.07
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:41:32 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+08:41:32.235 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:41:32.242 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+08:41:32.248 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.73
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:41:32 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+08:41:32.256 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:41:32.264 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products/
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
+
+08:41:32.356 [main] DEBUG com.intuit.karate - response time in milliseconds: 91.19
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 259
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:41:32 GMT
+1 < ETag: W/"103-RZ4w5/Gji/KUpjWjVS9DXRxN4aA"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999752,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-12-02T08:41:32.347Z","createdAt":"2019-12-02T08:41:32.347Z"}
+
+08:51:39.972 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:51:40.238 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept: no-cache
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+08:51:40.267 [main] DEBUG com.intuit.karate - response time in milliseconds: 25.68
+1 < 500
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 111
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:51:40 GMT
+1 < ETag: W/"6f-ED4C7ntBWlpHSUz6gAMPKrXYrLk"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"name":"GeneralError","message":"Not Acceptable","code":500,"className":"general-error","data":{},"errors":{}}
+
+08:51:40.268 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 26, url: http://localhost:3030/products/9999729, response: {"name":"GeneralError","message":"Not Acceptable","code":500,"className":"general-error","data":{},"errors":{}}
+08:51:40.293 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:51:40.300 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept: no-cache
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+08:51:40.307 [main] DEBUG com.intuit.karate - response time in milliseconds: 6.60
+1 < 500
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 111
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:51:40 GMT
+1 < ETag: W/"6f-ED4C7ntBWlpHSUz6gAMPKrXYrLk"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"name":"GeneralError","message":"Not Acceptable","code":500,"className":"general-error","data":{},"errors":{}}
+
+08:51:40.308 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 7, url: http://localhost:3030/products/9999729, response: {"name":"GeneralError","message":"Not Acceptable","code":500,"className":"general-error","data":{},"errors":{}}
+08:51:40.318 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:51:40.328 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products/
+1 > Accept: no-cache
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
+
+08:51:40.342 [main] DEBUG com.intuit.karate - response time in milliseconds: 14.22
+1 < 500
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 111
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:51:40 GMT
+1 < ETag: W/"6f-ED4C7ntBWlpHSUz6gAMPKrXYrLk"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"name":"GeneralError","message":"Not Acceptable","code":500,"className":"general-error","data":{},"errors":{}}
+
+08:51:40.343 [main] ERROR com.intuit.karate - status code was: 500, expected: 201, response time: 14, url: http://localhost:3030/products/, response: {"name":"GeneralError","message":"Not Acceptable","code":500,"className":"general-error","data":{},"errors":{}}
+08:51:50.080 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:51:50.322 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Accept1: no-cache
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+08:51:50.347 [main] DEBUG com.intuit.karate - response time in milliseconds: 22.50
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:51:50 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+08:51:50.363 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:51:50.368 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Accept1: no-cache
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+08:51:50.374 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.09
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:51:50 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+08:51:50.381 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:51:50.389 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products/
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Accept1: no-cache
+1 > Connection: Keep-Alive
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
+
+08:51:50.402 [main] DEBUG com.intuit.karate - response time in milliseconds: 12.92
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 259
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:51:50 GMT
+1 < ETag: W/"103-Cp1I1s9ISxF5JL9L9leA+Vn6rG4"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999754,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-12-02T08:51:50.399Z","createdAt":"2019-12-02T08:51:50.399Z"}
+
+08:52:24.999 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:52:25.240 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+08:52:25.264 [main] DEBUG com.intuit.karate - response time in milliseconds: 21.85
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:52:25 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+08:52:25.279 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:52:25.285 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+08:52:25.290 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.62
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:52:25 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+08:52:25.297 [main] INFO  com.intuit.karate - karate.env system property was: null 
+08:52:25.305 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
+
+08:52:25.316 [main] DEBUG com.intuit.karate - response time in milliseconds: 9.83
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 259
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 08:52:25 GMT
+1 < ETag: W/"103-UBCUu5EahPlN5uJZK6KXXctl+L4"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999755,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-12-02T08:52:25.312Z","createdAt":"2019-12-02T08:52:25.312Z"}
+
+11:39:58.162 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:39:58.416 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+11:39:58.448 [main] DEBUG com.intuit.karate - response time in milliseconds: 30.33
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 11:39:58 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+11:39:58.463 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:39:58.468 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+11:39:58.473 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.31
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 11:39:58 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+11:39:58.481 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:39:58.489 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
+
+11:39:58.506 [main] DEBUG com.intuit.karate - response time in milliseconds: 16.49
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 259
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 11:39:58 GMT
+1 < ETag: W/"103-5NclIsrSgYVjS6tNVjLIjnZfFss"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999756,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-12-02T11:39:58.499Z","createdAt":"2019-12-02T11:39:58.499Z"}
+
+11:40:47.137 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:40:47.362 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+11:40:47.874 [main] DEBUG com.intuit.karate - response time in milliseconds: 508.59
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Age: 1235
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 53ed072ebf23bc30-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 11:40:47 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d85f4bacddccaddc9c45f264a9508968f1575286847; expires=Wed, 01-Jan-20 11:40:47 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+11:40:47.896 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d85f4bacddccaddc9c45f264a9508968f1575286847
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+11:40:48.233 [main] DEBUG com.intuit.karate - response time in milliseconds: 336.52
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < Age: 4606
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 53ed0731195bbc30-LHR
+2 < Cache-Control: max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 02 Dec 2019 11:40:48 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Expires: -1
+2 < Pragma: no-cache
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+11:40:48.249 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:40:48.257 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+11:40:49.059 [main] DEBUG com.intuit.karate - response time in milliseconds: 800.86
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 53ed07335b8cbc30-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 216
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 11:40:49 GMT
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d0efb80b943735634e6e4dde171a8cc6b1575286848; expires=Wed, 01-Jan-20 11:40:48 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+11:40:49.069 [main] INFO  com.intuit.karate - [print] created id is:  11
+11:40:49.199 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:40:49.209 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+11:40:49.216 [main] DEBUG com.intuit.karate - response time in milliseconds: 6.97
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 11:40:49 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+11:40:49.223 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:40:49.228 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+11:40:49.236 [main] DEBUG com.intuit.karate - response time in milliseconds: 7.75
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 11:40:49 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+11:40:49.243 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:40:49.249 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
+
+11:40:49.267 [main] DEBUG com.intuit.karate - response time in milliseconds: 17.49
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 259
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 11:40:49 GMT
+1 < ETag: W/"103-1TRzUreqNj98Xso18JVfRwEmV7Q"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999757,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-12-02T11:40:49.261Z","createdAt":"2019-12-02T11:40:49.261Z"}
+
+13:13:56.284 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:13:56.519 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+13:13:57.853 [main] DEBUG com.intuit.karate - response time in milliseconds: 1330.64
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Age: 6825
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 53ed8fa53f1f6a5f-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:13:57 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d78f7438214d29bea0091c8ed425c5a791575292437; expires=Wed, 01-Jan-20 13:13:57 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+13:13:57.876 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d78f7438214d29bea0091c8ed425c5a791575292437
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+13:13:59.393 [main] DEBUG com.intuit.karate - response time in milliseconds: 1516.82
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < Age: 2986
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 53ed8fb218c26a5f-LHR
+2 < Cache-Control: max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 02 Dec 2019 13:13:59 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Expires: -1
+2 < Pragma: no-cache
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+13:13:59.409 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:13:59.417 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+13:14:00.255 [main] DEBUG com.intuit.karate - response time in milliseconds: 837.35
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 53ed8fb5cb776a5f-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 216
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:14:00 GMT
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc896a8185a73e0cf2c43241b3a89be501575292439; expires=Wed, 01-Jan-20 13:13:59 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+13:14:00.265 [main] INFO  com.intuit.karate - [print] created id is:  11
+13:14:00.395 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:00.404 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+13:14:00.431 [main] DEBUG com.intuit.karate - response time in milliseconds: 26.03
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:14:00 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+13:14:00.439 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:00.444 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+13:14:00.450 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.72
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:14:00 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+13:14:00.457 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:00.463 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
+
+13:14:00.477 [main] DEBUG com.intuit.karate - response time in milliseconds: 13.75
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 259
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:14:00 GMT
+1 < ETag: W/"103-As4FXdoICK8hlkI+aNUXSgmdSKo"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999758,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-12-02T13:14:00.473Z","createdAt":"2019-12-02T13:14:00.473Z"}
+
+13:44:15.360 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:44:15.608 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+13:44:18.419 [main] DEBUG com.intuit.karate - response time in milliseconds: 2812.04
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Age: 1442
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 53edbc170bb8e600-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:44:17 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d0c7d0542874dd45438820e4657352c201575294257; expires=Wed, 01-Jan-20 13:44:17 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+13:44:18.440 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d0c7d0542874dd45438820e4657352c201575294257
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+13:44:24.343 [main] DEBUG com.intuit.karate - response time in milliseconds: 5908.17
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < Age: 4811
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 53edbc3e3bc2e600-LHR
+2 < Cache-Control: max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 02 Dec 2019 13:44:24 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Expires: -1
+2 < Pragma: no-cache
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+13:44:24.359 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:44:24.368 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+13:44:26.814 [main] DEBUG com.intuit.karate - response time in milliseconds: 2447.36
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 53edbc461857e600-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 216
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:44:26 GMT
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d3c28a37a39afe957ef6ae21897463e281575294265; expires=Wed, 01-Jan-20 13:44:25 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+13:44:26.824 [main] INFO  com.intuit.karate - [print] created id is:  11
+13:44:26.946 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:44:26.956 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+13:44:26.962 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.74
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:44:26 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+13:44:26.970 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:44:26.975 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3030/products/9999729
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Type: application/json
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+13:44:26.979 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.86
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 273
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:44:26 GMT
+1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+
+13:44:26.986 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:44:26.991 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3030/products/
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Control: no-cache
+1 > Content-Length: 168
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+{"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
+
+13:44:27.001 [main] DEBUG com.intuit.karate - response time in milliseconds: 9.16
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 259
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Dec 2019 13:44:26 GMT
+1 < ETag: W/"103-FS9wNxhL5fJQJilLTfHalA33eVg"
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"id":9999759,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-12-02T13:44:26.997Z","createdAt":"2019-12-02T13:44:26.997Z"}
+
