@@ -1,5 +1,5 @@
-13:44:26.970 karate.env system property was: null 
-13:44:26.975 request:
+15:21:37.355 karate.env system property was: null 
+15:21:37.361 request:
 1 > GET http://localhost:3030/products/9999729
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -8,14 +8,14 @@
 1 > Host: localhost:3030
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
 
-13:44:26.979 response time in milliseconds: 3.86
+15:21:37.369 response time in milliseconds: 7.24
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < Allow: GET,POST,PUT,PATCH,DELETE
 1 < Connection: keep-alive
 1 < Content-Length: 273
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Mon, 02 Dec 2019 13:44:26 GMT
+1 < Date: Mon, 06 Jan 2020 15:21:37 GMT
 1 < ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
 1 < Vary: Accept, Accept-Encoding
 1 < X-Powered-By: Express

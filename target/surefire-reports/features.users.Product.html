@@ -173,26 +173,26 @@
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">* url 'http://localhost:3030'</div>
-                    <div class="time-cell passed">0.002246</div>
+                    <div class="time-cell passed">0.002143</div>
                 </div>
-                <div class="preformatted">13:44:26.947 karate.env system property was: null</div>
+                <div class="preformatted">15:21:37.323 karate.env system property was: null</div>
                 <div class="step-row">
                     <div class="step-cell passed">* header Content-Type = 'application/json'</div>
-                    <div class="time-cell passed">0.00198</div>
+                    <div class="time-cell passed">0.002139</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">* header Content-Control = 'no-cache'</div>
-                    <div class="time-cell passed">0.00194</div>
+                    <div class="time-cell passed">0.002067</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">Given path '/products/9999729'</div>
-                    <div class="time-cell passed">0.001724</div>
+                    <div class="time-cell passed">0.001901</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">When method GET</div>
-                    <div class="time-cell passed">0.00624</div>
+                    <div class="time-cell passed">0.006536</div>
                 </div>
-                <div class="preformatted">13:44:26.957 request:
+                <div class="preformatted">15:21:37.333 request:
 1 &gt; GET http://localhost:3030/products/9999729
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -201,14 +201,75 @@
 1 &gt; Host: localhost:3030
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
 
-13:44:26.962 response time in milliseconds: 4.74
+15:21:37.339 response time in milliseconds: 4.99
 1 &lt; 200
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 273
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 02 Dec 2019 13:44:26 GMT
+1 &lt; Date: Mon, 06 Jan 2020 15:21:37 GMT
+1 &lt; ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; X-Powered-By: Express
+{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}</div>
+                <div class="step-row">
+                    <div class="step-cell failed">Then status 400</div>
+                    <div class="time-cell failed">0.000356</div>
+                </div>
+                <div class="preformatted">15:21:37.339 status code was: 200, expected: 400, response time: 5, url: http://localhost:3030/products/9999729, response: {"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}
+Product.feature:12 - status code was: 200, expected: 400, response time: 5, url: http://localhost:3030/products/9999729, response: {"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}</div>
+                <div class="step-row">
+                    <div class="step-cell skipped">And match response contains {"name": "HP"}</div>
+                    <div class="time-cell skipped">0</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell skipped">And match response contains {"price": 399}</div>
+                    <div class="time-cell skipped">0</div>
+                </div>
+            </div>
+            <div class="scenario">
+                <div class="scenario-heading">
+                    <span class="scenario-keyword">Scenario Outline: [2.1:26]</span><span class="scenario-name">2. GET Request to list the information about product ID - with Parameterisation</span>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* url 'http://localhost:3030'</div>
+                    <div class="time-cell passed">0.000138</div>
+                </div>
+                <div class="preformatted">15:21:37.355 karate.env system property was: null</div>
+                <div class="step-row">
+                    <div class="step-cell passed">* header Content-Type = 'application/json'</div>
+                    <div class="time-cell passed">0.000099</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">* header Content-Control = 'no-cache'</div>
+                    <div class="time-cell passed">0.000092</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">Given path '/products/'+ 9999729</div>
+                    <div class="time-cell passed">0.002813</div>
+                </div>
+                <div class="step-row">
+                    <div class="step-cell passed">When method GET</div>
+                    <div class="time-cell passed">0.008788</div>
+                </div>
+                <div class="preformatted">15:21:37.361 request:
+1 &gt; GET http://localhost:3030/products/9999729
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Control: no-cache
+1 &gt; Content-Type: application/json
+1 &gt; Host: localhost:3030
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
+
+15:21:37.369 response time in milliseconds: 7.24
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 273
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 06 Jan 2020 15:21:37 GMT
 1 &lt; ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
 1 &lt; Vary: Accept, Accept-Encoding
 1 &lt; X-Powered-By: Express
@@ -218,71 +279,12 @@
                     <div class="time-cell passed">0.00001</div>
                 </div>
                 <div class="step-row">
-                    <div class="step-cell passed">And match response contains {"name": "HP"}</div>
-                    <div class="time-cell passed">0.001395</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">And match response contains {"price": 399}</div>
-                    <div class="time-cell passed">0.000161</div>
-                </div>
-            </div>
-            <div class="scenario">
-                <div class="scenario-heading">
-                    <span class="scenario-keyword">Scenario Outline: [2.1:26]</span><span class="scenario-name">2. GET Request to list the information about product ID - with Parameterisation</span>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">* url 'http://localhost:3030'</div>
-                    <div class="time-cell passed">0.000088</div>
-                </div>
-                <div class="preformatted">13:44:26.970 karate.env system property was: null</div>
-                <div class="step-row">
-                    <div class="step-cell passed">* header Content-Type = 'application/json'</div>
-                    <div class="time-cell passed">0.000081</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">* header Content-Control = 'no-cache'</div>
-                    <div class="time-cell passed">0.00006</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">Given path '/products/'+ 9999729</div>
-                    <div class="time-cell passed">0.002515</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-cell passed">When method GET</div>
-                    <div class="time-cell passed">0.005289</div>
-                </div>
-                <div class="preformatted">13:44:26.975 request:
-1 &gt; GET http://localhost:3030/products/9999729
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Control: no-cache
-1 &gt; Content-Type: application/json
-1 &gt; Host: localhost:3030
-1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
-
-13:44:26.979 response time in milliseconds: 3.86
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
-1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 273
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 02 Dec 2019 13:44:26 GMT
-1 &lt; ETag: W/"111-ls5SpHO8NiKCGpj8WkSPjFw/PpY"
-1 &lt; Vary: Accept, Accept-Encoding
-1 &lt; X-Powered-By: Express
-{"id":9999729,"name":"HP","type":"Windows","price":399,"upc":"string","shipping":0,"description":"string","manufacturer":"string","model":"string","url":"string","image":"string","createdAt":"2019-11-27T18:38:32.781Z","updatedAt":"2019-11-27T19:10:09.822Z","categories":[]}</div>
-                <div class="step-row">
-                    <div class="step-cell passed">Then status 200</div>
-                    <div class="time-cell passed">0.000009</div>
-                </div>
-                <div class="step-row">
                     <div class="step-cell passed">And match response contains {"name": HP}</div>
-                    <div class="time-cell passed">0.00017</div>
+                    <div class="time-cell passed">0.001036</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">And match response contains {"price": 399}</div>
-                    <div class="time-cell passed">0.000116</div>
+                    <div class="time-cell passed">0.000186</div>
                 </div>
             </div>
             <div class="scenario">
@@ -291,30 +293,30 @@
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">* url 'http://localhost:3030'</div>
-                    <div class="time-cell passed">0.000081</div>
+                    <div class="time-cell passed">0.00012</div>
                 </div>
-                <div class="preformatted">13:44:26.986 karate.env system property was: null</div>
+                <div class="preformatted">15:21:37.378 karate.env system property was: null</div>
                 <div class="step-row">
                     <div class="step-cell passed">* header Content-Type = 'application/json'</div>
-                    <div class="time-cell passed">0.000066</div>
+                    <div class="time-cell passed">0.000107</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">* header Content-Control = 'no-cache'</div>
-                    <div class="time-cell passed">0.00006</div>
+                    <div class="time-cell passed">0.000071</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">Given path '/products/'</div>
-                    <div class="time-cell passed">0.002016</div>
+                    <div class="time-cell passed">0.002867</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">And request {"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}</div>
-                    <div class="time-cell passed">0.000096</div>
+                    <div class="time-cell passed">0.000159</div>
                 </div>
                 <div class="step-row">
                     <div class="step-cell passed">When method POST</div>
-                    <div class="time-cell passed">0.012102</div>
+                    <div class="time-cell passed">0.012825</div>
                 </div>
-                <div class="preformatted">13:44:26.991 request:
+                <div class="preformatted">15:21:37.384 request:
 1 &gt; POST http://localhost:3030/products/
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -325,18 +327,18 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/11.0.4)
 {"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25}
 
-13:44:27.001 response time in milliseconds: 9.16
+15:21:37.395 response time in milliseconds: 11.07
 1 &lt; 201
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 259
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 02 Dec 2019 13:44:26 GMT
-1 &lt; ETag: W/"103-FS9wNxhL5fJQJilLTfHalA33eVg"
+1 &lt; Date: Mon, 06 Jan 2020 15:21:37 GMT
+1 &lt; ETag: W/"103-iw2ejCvK/LxZkW6jUuKTIEXdndM"
 1 &lt; Vary: Accept, Accept-Encoding
 1 &lt; X-Powered-By: Express
-{"id":9999759,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2019-12-02T13:44:26.997Z","createdAt":"2019-12-02T13:44:26.997Z"}</div>
+{"id":9999768,"name":"ACER","type":"Windows","upc":"String","description":"Work book","manufacturer":"ACER","model":"ACER","url":"String","image":"String","price":449,"shipping":25,"updatedAt":"2020-01-06T15:21:37.391Z","createdAt":"2020-01-06T15:21:37.391Z"}</div>
                 <div class="step-row">
                     <div class="step-cell passed">Then status 201</div>
                     <div class="time-cell passed">0.00001</div>

@@ -9,7 +9,7 @@ Feature: Check returned product Information GET request
 
     Given path '/products/9999729'
     When  method GET
-    Then  status 200
+    Then  status 400
     And match response contains {"name": "HP"}
     And match response contains {"price": 399}
 
